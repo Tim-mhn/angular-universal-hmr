@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    AppRoutingModule,
+    // trying to add the same imports as iqair.come AppModule to understand why reload doesn't return aanyitnh (blank page, with only app-root :(( ))
+
   ],
   providers: [],
   bootstrap: [AppComponent]
