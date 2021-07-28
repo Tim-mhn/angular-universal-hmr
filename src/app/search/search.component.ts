@@ -12,4 +12,8 @@ export class SearchComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  counter = 1;
+
+  incr = () => this.counter++
+
 }

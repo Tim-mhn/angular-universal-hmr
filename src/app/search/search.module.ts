@@ -7,7 +7,6 @@ const routes: Routes = [
   { path: '', component: SearchComponent, pathMatch: 'full' }
 ];
 @NgModule({
-  declarations: [SearchComponent],
   imports: [CommonModule, RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
